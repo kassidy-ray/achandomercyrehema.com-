@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achando Mercy - Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.03);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color:purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: blue;
+            transition: background-color 0.3s ease-in-out;
+            transform: scale(1.1);
+
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.classList.add("fade-in");
+                }, index * 300);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="back-button" onclick="history.back()">Go Back</button>
+
+    <header>
+        <h1>My Favorite Kenyan Meals</h1>
+        <nav>
+            <a href="fish1 (1).jpeg">Wet Fry Tilapia with Ugali & Greens</a>
+            <a href="chips and chicken1 (1).jpeg">Chips with Chicken</a>
+        </nav>
+    </header>
+
+    <section id="meal1">
+        <h2>Wet Fry Tilapia with Ugali & Greens</h2>
+        <img src="fish2.jpeg" alt="Wet Fry Tilapia with Ugali & Greens">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Tilapia fish</li>
+            <li>Onions</li>
+            <li>Tomatoes</li>
+            <li>Garlic & Ginger</li>
+            <li>Vegetable oil</li>
+            <li>Salt & spices</li>
+            <li>Ugali (maize flour)</li>
+            <li>Kale/Spinach</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Fry onions, garlic, and ginger. Add tomatoes and spices, then cook tilapia in the mixture. Prepare ugali and greens separately.</p>
+        <h3>Nutritional Information:</h3>
+        <p>Approximately 600 calories per serving.</p>
+    </section>
+
+    <section id="meal2">
+        <h2>Chips with Chicken</h2>
+        <img src="chips and chicken1 (2).jpeg" alt="Chips with Chicken">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Potatoes</li>
+            <li>Chicken pieces</li>
+            <li>Vegetable oil</li>
+            <li>Salt & spices</li>
+            <li>Garlic & herbs</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Fry the potatoes until golden. Marinate and grill or fry the chicken with spices and garlic.</p>
+        <h3>Nutritional Information:</h3>
+        <p>Approximately 700 calories per serving.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#meal1">Wet Fry Tilapia with Ugali & Greens</a>
+            <a href="#meal2">Chips with Chicken</a>
+        </nav>
+    </footer>
+</body>
+</html>

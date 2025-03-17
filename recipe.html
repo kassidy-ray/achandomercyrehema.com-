@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achando Mercy - Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.03);
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color:purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: blue;
+            transition: background-color 0.3s ease-in-out;
+            transform: scale(1.1);
+
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.classList.add("fade-in");
+                }, index * 300);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="back-button" onclick="history.back()">Go Back</button>
+
+    <header>
+        <h1>My  Favorite Meals</h1>
+        <nav>
+            <a href="food1.jpeg">Spaghetti Carbonara</a>
+            <a href="food2.jpeg">Grilled Salmon</a>
+        </nav>
+    </header>
+
+    <section id="meal1">
+        <h2>Spaghetti Carbonara</h2>
+        <img src="food1.jpeg" alt="Spaghetti Carbonara">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Spaghetti</li>
+            <li>Egg yolks</li>
+            <li>Pancetta</li>
+            <li>Parmesan cheese</li>
+            <li>Black pepper</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Boil the pasta, cook the pancetta, and mix with egg yolks and parmesan. Combine with pasta and season with black pepper.</p>
+        <h3>Nutritional Information:</h3>
+        <p>Approximately 500 calories per serving.</p>
+    </section>
+
+    <section id="meal2">
+        <h2>Grilled Salmon</h2>
+        <img src="food2.jpeg" alt="Grilled Salmon">
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>Salmon fillet</li>
+            <li>Olive oil</li>
+            <li>Garlic</li>
+            <li>Lemon juice</li>
+            <li>Herbs</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <p>Marinate the salmon in olive oil, garlic, and herbs. Grill for 10-15 minutes and finish with lemon juice.</p>
+        <h3>Nutritional Information:</h3>
+        <p>Approximately 300 calories per serving.</p>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#meal1">Spaghetti Carbonara</a>
+            <a href="#meal2">Grilled Salmon</a>
+        </nav>
+    </footer>
+</body>
+</html>

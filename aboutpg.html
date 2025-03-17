@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Microbiologist Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #2c3e50;
+      color: white;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      border: 4px solid #2c3e50;
+    }
+
+    h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 500px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+
+    .action-button {
+      padding: 12px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      width: 200px;
+      margin: 10px auto;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .action-button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Back Button Styles */
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #4CAF50; /* Green color on hover */
+    }
+
+    /* Overlay Styles */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .message-container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .loading-icon {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    .success-icon {
+      color: #4CAF50;
+      font-size: 48px;
+      margin-bottom: 20px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .message-container p {
+      font-size: 18px;
+      margin: 0;
+      color: #333;
+    }
+  </style>
+  
+
+</head>
+<body>
+ 
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <section class="about">
+     <!-- Back Button -->
+  <button class="back-button" onclick="window.history.back()">Back</button>
+    <!-- Profile Photo -->
+    <img src="bio3.jpeg" alt="Profile Photo" class="profile-photo">
+    <div style="background-color: blanchedalmond;">
+      <!-- Biography -->
+      <h2>Biography</h2>
+      <p class="bio-paragraph">Hello! I'm a passionate microbiologist with over 5 years of experience in laboratory research and microbial analysis. My work focuses on identifying pathogens and developing innovative antimicrobial treatments to combat infectious diseases.</p>
+      <p class="bio-paragraph hidden">I hold a Master's degree in Microbiology and have worked on several high-impact projects, including the development of rapid diagnostic tools for bacterial infections. I'm also skilled in data analysis and use Python to analyze complex datasets.</p>
+      <p class="bio-paragraph hidden">In my free time, I enjoy hiking, nature photography, and volunteering at local science fairs to inspire the next generation of scientists. My goal is to contribute to advancements in biotechnology and public health.</p>
+      <button onclick="toggleParagraph()" class="action-button toggle-button">Show More</button>
+    </div>
+    <div style="background-color: blue;">
+      <!-- Skills List -->
+      <h2 style="color: aliceblue;">Skills</h2>
+      <ul style="color: aliceblue;">
+        <li>Microbial Analysis (Advanced)</li>
+        <li>DNA Sequencing (Intermediate)</li>
+        <li>Data Analysis with Python (Intermediate)</li>
+        <li>HTML, CSS, JavaScript (Beginner)</li>
+        <li>Laboratory Safety and Protocols (Advanced)</li>
+      </ul>
+
+      <!-- Fun Facts -->
+      <h2 style="color: aliceblue;">Fun Facts</h2>
+      <ul style="color: aliceblue;">
+        <li>I once hiked 20 miles to capture the perfect photo of a rare bird.</li>
+        <li>I'm an avid science fiction reader and love discussing futuristic technologies.</li>
+        <li>I volunteer at local schools to teach kids about the wonders of microbiology.</li>
+        <li>I have a collection of over 100 science-themed coffee mugs.</li>
+      </ul>
+    </div>
+    <!-- Contact Form -->
+    <div style="background-color: rgb(104, 104, 189); color: aliceblue;">
+      <h2 style="color: aliceblue;">Contact Me</h2>
+      <form onsubmit="validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button class="action-button" type="submit">Send Message</button>
+      </form>
+
+      <!-- Download CV Button -->
+      <a href="Achando_Mercy_CV.pdf" download="Achando_Mercy_CV.pdf" class="action-button">Download CV</a>
+    </div>
+  </section>
+
+  <!-- Overlay for sending and success messages -->
+  <div id="overlay" class="overlay">
+    <div id="message-container" class="message-container"></div>
+  </div>
+
+  <!-- Include EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    // Load environment variables from .env file
+    const emailjsPublicKey = process.env.EMAILJS_PUBLIC_KEY;
+    const emailjsServiceId = process.env.EMAILJS_SERVICE_ID;
+    const emailjsTemplateId = process.env.EMAILJS_TEMPLATE_ID;
+
+    // Initialize EmailJS with your Public Key
+    (function() {
+      emailjs.init(emailjsPublicKey);
+    })();
+
+    function toggleParagraph() {
+      const paragraphs = document.querySelectorAll('.bio-paragraph');
+      const toggleButton = document.querySelector('.toggle-button');
+
+      let allVisible = true;
+      paragraphs.forEach(paragraph => {
+        if (paragraph.classList.contains('hidden')) {
+          allVisible = false;
+        }
+      });
+
+      if (allVisible) {
+        // Hide all paragraphs except the first one
+        paragraphs.forEach((paragraph, index) => {
+          if (index > 0) {
+            paragraph.classList.add('hidden');
+          }
+        });
+        toggleButton.textContent = 'Show More';
+      } else {
+        // Show all paragraphs
+        paragraphs.forEach(paragraph => {
+          paragraph.classList.remove('hidden');
+        });
+        toggleButton.textContent = 'Show Less';
+      }
+    }
+
+    function validateForm(event) {
+      event.preventDefault(); // Prevent form submission
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Check if fields are empty
+      if (!name || !email || !message) {
+        alert('All fields (Name, Email, and Message) are required.');
+        return;
+      }
+
+      // Validate email format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Show the sending overlay
+      const overlay = document.getElementById('overlay');
+      const messageContainer = document.getElementById('message-container');
+      overlay.style.display = 'flex';
+      messageContainer.innerHTML = `
+        <div class="loading-icon"></div>
+        <p>Sending...</p>
+      `;
+
+      // Send email using EmailJS
+      emailjs.send(emailjsServiceId, emailjsTemplateId, {
+        name: name,
+        email: email,
+        message: message,
+      }, emailjsPublicKey)
+        .then(() => {
+          // Show success message
+          messageContainer.innerHTML = `
+            <div class="success-icon">✔</div>
+            <p>Message sent successfully!</p>
+          `;
+
+          // Hide the overlay after 7 seconds
+          setTimeout(() => {
+            overlay.style.display = 'none';
+          }, 7000);
+        })
+        .catch((error) => {
+          // Show error message
+          messageContainer.innerHTML = `
+            <div style="color: red; font-size: 24px;">❌</div>
+            <p>Failed to send message. Please try again.</p>
+          `;
+
+          // Hide the overlay after 7 seconds
+          setTimeout(() => {
+            overlay.style.display = 'none';
+          }, 7000);
+        });
+    }
+  </script>
+
+</body>
+</html>

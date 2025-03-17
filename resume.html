@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achando Mercy - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .profile-pic img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #777;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color:purple;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: blue;
+            transition: background-color 0.3s ease-in-out;
+            transform: scale(1.1);
+
+        }
+    </style>
+    <script>
+        function highlightSkills() {
+            const skills = document.querySelectorAll("section:nth-child(6) li");
+            skills.forEach(skill => {
+                skill.classList.toggle("highlight");
+            });
+        }
+
+        window.addEventListener("load", () => {
+            setInterval(highlightSkills, 2000);
+        });
+    </script>
+</head>
+<body>
+    <button class="back-button" onclick="history.back()">Go Back</button>
+    <header>
+        <div class="profile-pic">
+            <img src="bio3.jpeg" alt="Achando Mercy Profile Picture">
+        </div>
+        <h1>Achando Mercy</h1>
+        <p>Nairobi, Kenya | +254 784 973109 | kassidyray444@gmail.com</p>
+        <p><a href="https://www.github.com/achandomercy" style="color: white;">github.com/achandomercy</a></p>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Highly motivated and detail-oriented Microbiologist with a strong academic background and hands-on experience in microbial analysis, laboratory techniques, and research. Passionate about contributing to scientific advancements in healthcare, agriculture, and environmental sustainability.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <h3>Bachelor of Science in Microbiology</h3>
+        <p>Jomo Kenyatta University of Agriculture and Technology (2015 - 2019)</p>
+        <p>Relevant coursework: Microbial Physiology, Molecular Biology, Immunology, Biotechnology, Environmental Microbiology, and Bioinformatics.</p>
+
+        <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+        <p>St. Peter’s Girls High School (2011 - 2014)</p>
+        <p>Achieved an excellent grade of B+ (plus)</p>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        <h3>Microbiology Intern</h3>
+        <p>Analabs Limited, Nairobi, Kenya (Jan 2020 - Aug 2020)</p>
+        <ul>
+            <li>Conducted microbial analysis on water, food, and environmental samples.</li>
+            <li>Assisted in identifying bacterial and fungal pathogens.</li>
+            <li>Maintained detailed laboratory records and reports.</li>
+        </ul>
+
+        <h3>Research Assistant</h3>
+        <p>JKUAT, Nairobi, Kenya (Aug 2020 - Dec 2021)</p>
+        <ul>
+            <li>Supported research projects on antimicrobial resistance and microbial genomics.</li>
+            <li>Performed PCR, gel electrophoresis, and DNA sequencing.</li>
+            <li>Contributed to research papers and conference presentations.</li>
+        </ul>
+
+        <h3>Volunteer – Public Health Awareness Campaign</h3>
+        <p>UNESCO, Nairobi, Kenya (Jun 2020 - Mar 2022)</p>
+        <ul>
+            <li>Educated communities on hygiene practices and disease prevention.</li>
+            <li>Analyzed water samples for microbial contamination.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Microbial culturing, PCR, gel electrophoresis, microscopy.</li>
+            <li>Bioinformatics software and data analysis (SPSS, R).</li>
+            <li>Scientific writing, teamwork, and communication.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified Laboratory Technician (AMT, 2021)</li>
+            <li>Biosafety and Biosecurity Training (WHO, 2020)</li>
+            <li>Molecular Biology Techniques Certification (JKUAT, 2021)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Professional Affiliations</h2>
+        <ul>
+            <li>Kenya Society for Microbiology</li>
+            <li>African Society for Laboratory Medicine</li>
+            <li>American Society for Microbiology</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            <li>English (Fluent)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>References available upon request.</p>
+    </footer>
+</body>
+</html>
