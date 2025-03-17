@@ -192,7 +192,7 @@
      <!-- Back Button -->
   <button class="back-button" onclick="window.history.back()">Back</button>
     <!-- Profile Photo -->
-    <img src="bio3.jpeg" alt="Profile Photo" class="profile-photo">
+    <img src="bio4.jpeg" alt="Profile Photo" class="profile-photo">
     <div style="background-color: blanchedalmond;">
       <!-- Biography -->
       <h2>Biography</h2>
@@ -314,6 +314,11 @@
         <p>Sending...</p>
       `;
 
+      // Hide the "Sending..." overlay after 6 seconds
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 6000);
+
       // Send email using EmailJS
       emailjs.send(emailjsServiceId, emailjsTemplateId, {
         name: name,
@@ -327,10 +332,10 @@
             <p>Message sent successfully!</p>
           `;
 
-          // Hide the overlay after 7 seconds
+          // Hide the overlay after 6 seconds
           setTimeout(() => {
             overlay.style.display = 'none';
-          }, 7000);
+          }, 6000);
         })
         .catch((error) => {
           // Show error message
@@ -339,10 +344,10 @@
             <p>Failed to send message. Please try again.</p>
           `;
 
-          // Hide the overlay after 7 seconds
+          // Hide the overlay after 6 seconds
           setTimeout(() => {
             overlay.style.display = 'none';
-          }, 7000);
+          }, 6000);
         });
     }
   </script>
