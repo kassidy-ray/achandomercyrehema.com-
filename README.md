@@ -59,4 +59,6 @@ For professional inquirries, please visit the portfolio and use the contact form
 
 🌐 [https://kassidy-ray.github.io/achandomercyrehema.com-/](https://kassidy-ray.github.io/achandomercyrehema.com-/)\
 📞 +254 784 973109
+💬 WhatsApp:  +254 784 973109
+📧 Email: kassidyray444@gmail.com
 
