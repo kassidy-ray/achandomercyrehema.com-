@@ -15,14 +15,13 @@ This portfolio website serves as a professional digital presence for a Achando M
 
 ## Project Structure
 
-'''
-index.html      # Main portfolio page
-styles.css      # Stylesheet for design and layout
-script.js       # JavaScript for dynamic interactions
-profile.jpg     # Profile picture for branding
-cv.pdf          # Downloadable resume
-README.md       # Project documentation
-'''
+- **index.html** – Main portfolio page  
+- **styles.css** – Stylesheet for design and layout  
+- **script.js** – JavaScript for dynamic interactions  
+- **profile.jpg** – Profile picture for branding  
+- **cv.pdf** – Downloadable resume  
+- **README.md** – Project documentation
+  
 ## Navigation Guide
 
 1. Open index.html in a web browser to access the portfolio.
