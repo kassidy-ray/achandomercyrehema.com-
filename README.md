@@ -26,14 +26,14 @@ This portfolio website serves as a professional digital presence for a Achando M
 
 ## Navigation Guide
 
-1. Open `index.html` in a web browser to access the portfolio.
+1. Open index.html in a web browser to access the portfolio.
 2. It displays the overview and quick summary of of Achando mercy profession and the  buttons which upon clicking it navigates you to another webpage
 3. Click "Resume"  to be navigated into another page which contains the resume of Achando Mercy. The resume contains My professional summary,  education, professional experience, skills, certifications, Professional affiliations and languages I use.
 4. Click "About" to be navigated into another page showcasing my biography, skills, fun facts about me, a way to contact me via email and also be able to download my CV. Click "Show More" in the Biography section to expand details. 
 5. Click "My favorite meals" to be navigated to an new page showcasing my favorite  American delicacies which are Spaghetti Carbonara and Grilled Salmon. The page also has the picture of each food, its recipe and nutrition information.
 6. Click "My favorite Kenyan meals" to be navigated to an new page showcasing my favorite  Kenyan favorite dish of Wet Fry Tilapia with Ugali & Greens and Chips with Chicken. The page also has the picture of each food, its recipe and nutrition information.
 7. Click "Show more" to get a summary of my professional experience, work life routine, achievements and awards.
-8. **Check the Contact Form at the bottom of my landing page to find my contacts on which you can reach out to me.**
+8. Check the Contact Form at the bottom of my landing page to find my contacts on which you can reach out to me.
 9. Access my CV by clicking the "Download CV" button in the "About me" page in order to download it.
 10. For better user experience it is incorporated with the "back" button for one to navigate to the previous pages.
 
