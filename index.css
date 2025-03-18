@@ -135,3 +135,25 @@ body {
   .active{
     background-color: yellowgreen;
   }
+.footer-content {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .footer-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-item i {
+      font-size: 24px;
+      color: #3498db;
+    }
+    .footer-item a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-item a:hover {
+      color: #3498db;
+    }
